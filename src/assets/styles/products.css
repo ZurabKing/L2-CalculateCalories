@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+}
+
+.add__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(235, 215, 215);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.name__product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.name__product-container label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.name__product-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.calories__product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.calories__product-container label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calories__product-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.add__product {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgb(147, 147, 214);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add__product:hover {
+  background-color: rgb(133, 133, 231);
+}
+
+.list__product-title {
+  margin-top: 10px;
+}
+
+.accounting_title {
+  margin-top: 10px;
+}
+
+.chart {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+}

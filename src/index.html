@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>Calorie calculator</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <h1>Калькулятор калорий</h1>
+      <div>
+        <h2 class="add__title">Добавьте продукт в свой рацион:</h2>
+        <div class="name__product-container">
+          <label for="productName">Название продукта:</label>
+          <input
+            placeholder="Введите продукт"
+            type="text"
+            id="productName"
+            required
+          />
+        </div>
+        <div class="calories__product-container">
+          <label for="calories">Калории:</label>
+          <input
+            placeholder="Введите количество калорий"
+            type="number"
+            id="calories"
+            required
+          />
+        </div>
+        <button class="add__product" id="add">Добавить</button>
+      </div>
+      <div class="product__container">
+        <h2 class="list__product-title">Список продуктов</h2>
+        <button id="sortBtn" onclick="sortProducts()">
+          Сортировать по калориям
+        </button>
+        <ul id="productList"></ul>
+      </div>
+      <div>
+        <h2 class="accounting_title">Учет калорий за день</h2>
+        <p id="totalCalories">Общее количество калорий: 0</p>
+        <p id="targetCalories">
+          Целевое количество калорий:
+          <input type="number" id="targetCaloriesInput" />
+        </p>
+
+        <button class="add__product" id="clear">Очистить</button>
+      </div>
+
+      <canvas class="chart" id="myChart" width="400" height="300"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/chart.js"></script>
+  </body>
+</html>
